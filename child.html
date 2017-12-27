@@ -25,7 +25,8 @@
     }
 
     function ProcessParentMessage(message) {
-        $('#external_messages').append('<div>' + message + '<div>');
+        const date = Date();
+        $('#external_messages').append('<div> >>> ' + date + message + '<div>');
     }
 
     document.getElementById("send_message").addEventListener("click", SendMessageToParent);
