@@ -43,8 +43,8 @@
             }
 
             function ProcessChildMessage(message) {
-                const date = Date();
-                $('#external_messages').append('<div> >>> ' + date + message + '</div>')
+                const date = Date(); 
+                $('#external_messages').append(`<div> >>> ${date} - ${message} </div>`)
             }
 
 

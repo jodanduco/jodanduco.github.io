@@ -26,7 +26,7 @@
 
     function ProcessParentMessage(message) {
         const date = Date();
-        $('#external_messages').append('<div> >>> ' + date + message + '<div>');
+         $('#external_messages').append(`<div> >>> ${date} - ${message} </div>`)
     }
 
     document.getElementById("send_message").addEventListener("click", SendMessageToParent);
