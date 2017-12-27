@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <title>Parent</title>
+    <style>
+    #messages_container{
+        display: none;
+    }
+    </style>
 </head>
 <body>
     <h2>Parent Window</h2>
@@ -27,6 +32,7 @@
             function OpenChild() {
                 const url = 'child.html';
                 _CHILD_WINDOW_HANDLE = window.open(url);
+                $('#messages_container').show();
             }
 
             function SendMessageToChild() {
